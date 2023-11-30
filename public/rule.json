@@ -1,0 +1,25 @@
+[
+	{
+		"id": 1,
+		"priority": 1,
+		"condition": {
+			"urlFilter": "*.52ritao.cn",
+			"resourceTypes": ["xmlhttprequest"]
+		},
+		"action": {
+			"type": "modifyHeaders",
+			"responseHeaders": [
+				{
+					"header": "Access-Control-Allow-Origin",
+					"operation": "set",
+					"value": "*"
+				},
+				{
+					"header": "Access-Control-Allow-Methods",
+					"operation": "set",
+					"value": "GET,PUT,POST,DELETE,UPDATE,OPTIONS"
+				}
+			]
+		}
+	}
+]
