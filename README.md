@@ -1,21 +1,40 @@
-# <img src="public/icons/icon_48.png" width="45" align="left"> Filing
+# 拆分工具帮助
 
-My Chrome Extension
+我们在拆分页提供的工具叫“Bling”，它不影响原来的拆分逻辑，只是帮助工作人员来快速决策：
+这一堆商品中都有啥
+分析它们的名字，方便直接填入“拆分备案名”输入框中
 
-## Features
+### 使用方法
 
-- Feature 1
-- Feature 2
+###### 1.1 界面
 
-## Install
+![界面](https://s4.wandougongzhu.cn/s/c8/eb11f9f70094eaeb40c5989ec8d71941_d71941.png)
 
-[**Chrome** extension]()
+1. 区域 1 是当前这个待拆分品的商品图列表，可以选中某个商品图，区域 2 中预览图就会切换
+2. 区域 2 是图片预览区，可以调整框选部分，以告知程序要分析哪部分的图片
+3. 区域 3 是根据区域中选中的部分图片内容，推荐商品列表。可以点击选中多个商品
+4. 区域 4 是信息区，在区域 3 选 中几个商品后，在区域 4 点击“分析商品信息”按钮，程序就会根据选择的商品，分析得到它的商品名点击“分析结果”中的 🖌️ 按钮，就会把它前面的信息，填入到区域 5 中的商品名输入框中
+   ![分析](https://s2.wandougongzhu.cn/s/fe/c6a3975be529708c68018729fe4c3714_4c3714.png)
+5. 区域 5 商品拆分列表，就是我们真正的工作区，在这里完成拆分动作。
 
-## Contribution
+区域 1、2、3、4 都是为了帮助区域 5 更快更准确的完成拆分工作。
 
-Suggestions and pull requests are welcomed!.
+###### 1.2 页面布局
 
----
+![布局](https://s3.52ritao.cn/s/ee/884e70ddd436c32393683eb4ee0242e0_0242e0.png)
+右上角三个按钮，用来切换页面布局。
+因为大家的显示器大小不一样，可以根据自己的需求切换样式。
 
-This project was bootstrapped with [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli)
+### 2 安装加速插件
 
+为了提高速度，请安装 Bling 扩展。安装方式如下：
+
+1. [点击此处下载 Bling](https://github.com/inagora/bling/releases/download/v1.0.1/v1.0.1.zip)；
+2. 解压
+3. 通过 chrome 工具菜单，打开“管理扩展程序”界面
+   ![扩展管理](https://s3.52ritao.cn/s/4a/ae2e20a0aa21f0eb4d2cc8f64adc310a_dc310a.png)
+4. 打开“开发者模式”
+5. 通过“加载已解压的扩展程序”，加载上面解压的文件夹
+   ![加载](https://s2.wandougongzhu.cn/s/28/e8df96932d032bf5686e9ff8288d7adc_8d7adc.png)
+
+好了，扩展安装完成
