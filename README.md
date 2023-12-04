@@ -9,7 +9,7 @@
 
 为了提高速度，请安装 `Bling` 插件。安装方式如下：
 
-1. [点击此处下载 Bling](https://github.com/inagora/bling/releases/download/v1.0.3/build.zip)；
+1. [点击此处下载 Bling](https://github.com/inagora/bling/releases/download/v1.0.5/build.zip)；
 2. 解压
 3. 通过 chrome 工具菜单，打开`“管理扩展程序”`界面
    ![扩展管理](https://s3.52ritao.cn/s/4a/ae2e20a0aa21f0eb4d2cc8f64adc310a_dc310a.png)
