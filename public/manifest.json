@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "Bling",
-	"version": "0.1.0",
+	"version": "1.0.4",
 	"description": "Bling：日淘市集后台工具，用于辅助备案等功能",
 	"icons": {
 		"16": "icons/icon_16.png",
@@ -23,7 +23,8 @@
 		"scripting",
 		"activeTab",
 		"webNavigation",
-		"tabs"
+		"tabs",
+		"storage"
 	],
 
 	"host_permissions": ["<all_urls>"],

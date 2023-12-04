@@ -16,3 +16,8 @@ chrome.runtime.onMessage.addListener((req, sender, sendResponse) => {
 		}
 	}
 });
+
+chrome.runtime.onInstalled.addListener(function () {
+	const manifest = chrome.runtime.getManifest();
+	chrome.storage.local.set({ manifest });
+});

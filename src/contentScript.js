@@ -171,9 +171,6 @@ const injectScript = {
 		);
 	},
 };
-/**
- * 处理lens页面信息
- */
 if (window.location.href.startsWith("https://lens.52ritao.cn/")) {
 	const onReady = function (callback) {
 		// don't use "interactive" on IE <= 10 (it can fired premature)
@@ -218,6 +215,12 @@ if (window.location.href.startsWith("https://lens.52ritao.cn/")) {
 			false
 		);
 		window.parent.postMessage({ cmd: "lensReady" }, "*");
+		chrome.storage.local.get(["manifest"]).then((result) => {
+			window.parent.postMessage(
+				{ cmd: "manifest", manifest: result.manifest },
+				"*"
+			);
+		});
 		if (window.trustedTypes && window.trustedTypes.createPolicy) {
 			window.trustedTypes.createPolicy("default", {
 				createHTML: (string, sink) => string,
