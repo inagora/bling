@@ -19,7 +19,11 @@
 	"permissions": [
 		"webRequest",
 		"declarativeNetRequest",
-		"declarativeNetRequestFeedback"
+		"declarativeNetRequestFeedback",
+		"scripting",
+		"activeTab",
+		"webNavigation",
+		"tabs"
 	],
 
 	"host_permissions": ["<all_urls>"],
@@ -28,9 +32,11 @@
 			"matches": [
 				"http://*.52ritao.com/*",
 				"https://*.52ritao.com/*",
-				"https://rtbackend.inagora.org/*"
+				"https://rtbackend.inagora.org/*",
+				"https://lens.52ritao.cn/*"
 			],
-			"js": ["contentScript.js"]
+			"js": ["contentScript.js"],
+			"all_frames": true
 		}
 	]
 }
