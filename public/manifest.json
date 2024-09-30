@@ -34,7 +34,8 @@
 				"http://*.52ritao.com/*",
 				"https://*.52ritao.com/*",
 				"https://rtbackend.inagora.org/*",
-				"https://lens.52ritao.cn/*"
+				"https://lens.52ritao.cn/*",
+				"https://lens.google.com/*"
 			],
 			"js": ["contentScript.js"],
 			"all_frames": true

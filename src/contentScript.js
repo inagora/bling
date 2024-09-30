@@ -171,7 +171,10 @@ const injectScript = {
 		);
 	},
 };
-if (window.location.href.startsWith("https://lens.52ritao.cn/")) {
+if (
+	window.location.href.startsWith("https://lens.52ritao.cn/") ||
+	window.location.href.startsWith("https://lens.google.com/")
+) {
 	const onReady = function (callback) {
 		// don't use "interactive" on IE <= 10 (it can fired premature)
 		if (
